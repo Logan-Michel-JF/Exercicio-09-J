@@ -51,21 +51,27 @@ public class Exercicio00 implements JFrameBaseInterface{
     }
 
     @Override
-    public void adicionarComponetes() {
-        
-    }
-
-    @Override
     public void instanciarComponentes() {
+        jLabelNome = new JLabel("Nome");
+        jTextFieldNome = new JTextField();
+    }
         
+    @Override
+    public void adicionarComponetes() {
+        jFrame.add(jLabelNome);
+        jFrame.add(jTextFieldNome);
     }
 
     @Override
     public void gerarLocalizacoes() {
+        jLabelNome.setLocation(10 , 5);
+        jTextFieldNome.setLocation(10, 30);
     }
 
     @Override
     public void gerarDimensoes() {
+        jLabelNome.setSize(50, 20);
+        jTextFieldNome.setSize(350, 20);
     }
 
     @Override
