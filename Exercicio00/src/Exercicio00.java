@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 
 /**
@@ -17,12 +18,13 @@ import javax.swing.JTextArea;
 public class Exercicio00 implements JFrameBaseInterface{
     
     public JFrame jFrame;
-    public JTextArea jTextArea;
-    public JLabel jLabelDescricao;
+    public JTextArea jTextDescricao;
+    public JTextField jTextFieldNome, jTextFieldIdade, jTextFieldApelido, jTextFieldPreco;
+    public JLabel jLabelNome, jLabelIdade, jLabelApelido, jLabelPreco;
     public JScrollPane jScrollPane;
     public JButton jButtonSalvar, jButtonCancelar;
     public JCheckBox jCheckBoxAdestrado, jCheckBoxCastrado, jCheckBoxVacinado, jCheckBoxPedigree;
-    public JComboBox jComboBox;
+    public JComboBox jComboBoxRaca;
     public JRadioButton jRadioButtonVivo, jRadioButtonMorto, jRadioButtonRacao, jRadioButtonComeAlmocoEJanta;
     
     
@@ -50,23 +52,12 @@ public class Exercicio00 implements JFrameBaseInterface{
 
     @Override
     public void adicionarComponetes() {
-        jFrame.add(jLabelDescricao);
-        jFrame.add(jButtonSalvar);
-        jFrame.add(jButtonCancelar);
-        jFrame.add(jCheckBoxAdestrado);
-        jFrame.add(jCheckBoxCastrado);
-        jFrame.add(jCheckBoxVacinado);
-        jFrame.add(jCheckBoxPedigree);
-        jFrame.add(jRadioButtonVivo);
-        jFrame.add(jRadioButtonMorto);
-        jFrame.add(jRadioButtonRacao);
-        jFrame.add(jRadioButtonComeAlmocoEJanta);
-        jFrame.add(jLabelDescricao);
-        jFrame.add(jScrollPane);
+        
     }
 
     @Override
     public void instanciarComponentes() {
+        
     }
 
     @Override
