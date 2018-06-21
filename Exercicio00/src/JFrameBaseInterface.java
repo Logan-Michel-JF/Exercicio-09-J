@@ -12,5 +12,6 @@ interface JFrameBaseInterface {
     void acaoBotaoSalvar();
     void acaoBotaoCancelar();
     void configurarJScrollPane();
+    void definirObjetoComboBox();
     
 }
